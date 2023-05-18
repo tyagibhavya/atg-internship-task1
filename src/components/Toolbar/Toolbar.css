@@ -1,0 +1,150 @@
+.toolbar {
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    width: 80%;
+    height: 72px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+}
+
+.options {
+    margin: 0;
+    padding: 1%;
+    background-color: #FFFFFF;
+    z-index: -1;
+}
+
+.options p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: #8A8A8A;
+    z-index: -1;
+}
+
+.options p:hover {
+    cursor: pointer;
+    color: #000000;
+    border-bottom: 0.4px solid #000000;
+    padding-bottom: 15px;
+    z-index: -1;
+}
+
+.mobile {
+    display: none;
+}
+
+/* The container <div> - needed to position the tool-dd content */
+.tool-dd {
+    flex: 1;
+    align-self: first baseline;
+    position: relative;
+    display: inline-block;
+
+}
+
+/* tool-dd Button */
+.dropbtn {
+    background: none;
+    padding: 3px;
+    border: none;
+}
+
+.dropbtn img {
+    width: 15px;
+    height: 5px;
+}
+
+/* tool-dd Content (Hidden by Default) */
+.tool-dd-content {
+    display: none;
+    position: absolute;
+    width: 140px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+/* Links inside the tool-dd */
+.tool-dd-content a {
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of tool-dd links on hover */
+.tool-dd-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the tool-dd menu on hover */
+.tool-dd:hover .tool-dd-content {
+    display: block;
+}
+
+/* Change the background color of the tool-dd button when the tool-dd content is shown */
+.tool-dd:hover .dropbtn {
+    background: #BFC0C0;
+    border-radius: 4px;
+}
+
+
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 767px) {
+    .toolbar {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+}
+
+/* Media Query for screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .toolbar {
+        margin-left: 8%;
+        margin-right: 8%;
+        width: 84%;
+    }
+}
+
+/* Media Query for screens larger than 1023px */
+@media (min-width: 1024px) {
+    .toolbar {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .options {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 360px;
+        height: 50px;
+        position: relative;
+        margin: 0;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,113 @@
+.sidebar {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.location-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+    border: none;
+    border-bottom: 0.4px solid #B8B8B8;
+}
+
+.location-bar img {
+    flex: 1;
+    width: 18px;
+    height: 18px;
+}
+
+
+.location-bar input {
+    flex: 11;
+    font-size: 14px;
+    font-size: 400;
+    padding: 3%;
+    padding-top: 0;
+    color: #000000;
+    background-color: #FFFFFF;
+    outline: none;
+    border: none;
+}
+
+.notification {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.notification p {
+    margin-left: 3%;
+    font-size: 12px;
+    font-size: 400;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.notification img {
+    width: 13.33px;
+    height: 13.33px;
+    opacity: 0.5;
+}
+
+.suggestions {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    background-color: #FFFFFF;
+    width: 100%;
+    margin: 0;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5%;
+}
+
+.items img {
+    flex: 1;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.items p {
+    flex: 5;
+    margin-left: 5%;
+    font-size: 14px;
+    font-size: 500;
+}
+
+.items button {
+    flex: 1;
+    padding: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #EDEEF0;
+    color: #000000;
+    font-size: 12px;
+    font-size: 400;
+}
+
+.items button:hover {
+    background: #292929;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 412px) {
+    .sidebar {
+        display: none;
+    }
+}

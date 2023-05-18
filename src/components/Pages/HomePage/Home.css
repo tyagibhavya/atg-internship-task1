@@ -1,0 +1,35 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    z-index: 0;
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 767px) {
+    .home {
+        margin-top: 350px;
+    }
+}
+
+@media (max-width: 412px) {
+    .home {
+        top: 200px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Media Query for screens larger than 768px */
+@media (min-width: 768px) {
+    .home {
+        margin-top: 550px;
+    }
+}
